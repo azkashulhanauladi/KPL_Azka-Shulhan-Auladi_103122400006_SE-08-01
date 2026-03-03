@@ -4,7 +4,7 @@ Kamu sudah menulis fungsi mulOfArray. Ujilah dengan input [2, 0, 26, 28, -2], de
 
 Output
 
-![Output Program](02_Output.png)
+![Output Program](02_Output.png.png)
 
 Deskripsi Program
 
