@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Pendahuluan - Pengkonversi Gaya Teks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pengkonversi Gaya Teks</h1>
+    <p>Alat ini bisa mengubah teks menjadi huruf besar dan huruf kecil.</p>
+
+    <label for="editor-besar">Masukkan teks:</label>
+    <textarea id="editor-besar" placeholder="Ketik teks di sini..."></textarea>
+
+    <div class="hasil-info">
+      <span>Huruf: <span id="jumlah-huruf">0</span></span>,
+      <span>huruf besar: <span id="jumlah-besar">0</span></span>
+      <span>huruf kecil: <span id="jumlah-kecil">0</span></span>
+    </div>
+
+    <div class="button-group">
+      <button id="btn-besarkan">Besarkan</button>
+      <button id="btn-kecilkan">Kecilkan</button>
+    </div>
+
+    <br>
+
+    <div class="button-group">
+      <button id="btn-mode-terang">Mode Terang</button>
+      <button id="btn-mode-gelap">Mode Gelap</button>
+    </div>
+
+    <h2>Hasil Konversi</h2>
+    <textarea id="editor-kecil" readonly placeholder="Hasil akan tampil di sini..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
