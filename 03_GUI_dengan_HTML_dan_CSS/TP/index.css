@@ -1,0 +1,52 @@
+/* 1. Body tetap menggunakan flex untuk menengahkan pembungkusnya */
+body {
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center; /* Mengetengahkan secara horizontal */
+    align-items: center;     /* Mengetengahkan secara vertikal */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* 2. Gunakan container untuk membungkus semua elemen */
+/* Di sini kuncinya: text-align tetap LEFT */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Membuat semua elemen di dalamnya rata KIRI */
+    text-align: left;        /* Memastikan teks tetap rata KIRI */
+    width: fit-content;      /* Lebar mengikuti isi paling lebar */
+    max-width: 600px;        /* Batas lebar maksimal */
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.kotak-input {
+    display: block;
+    resize: none;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    margin: 15px 0;          /* Memberi jarak atas dan bawah */
+    border: 1px solid #ccc;
+}
+
+p > span {
+    color: coral;
+    font-weight: bold;
+}
+
+/* 3. Baris tombol tetap berjajar ke samping */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+    padding: 5px 10px;
+}
